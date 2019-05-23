@@ -8,7 +8,7 @@ class Test(unittest.TestCase):
 
     def test_function(self):
         try:
-            module.Series2(0,[])
+            f=module.Series(0,[])
         except:
             print("No class")
         return True
@@ -36,5 +36,8 @@ class Test(unittest.TestCase):
 
     def test_error(self):
         self.initialize()
-        e=self.s.get_error(1,1)
+        e=self.s.getError(1,1)
         self.assertEqual(e,1)
+
+    def test_clean(self):
+        self.initialize()
