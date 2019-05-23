@@ -5,6 +5,7 @@ class Test(unittest.TestCase):
 
     def test_function(self):
         f=module.Series(0,[])
+        return True
         
     def test_get_value(self):
         s=module.Series(3,[1,1/2,1/6])
@@ -18,5 +19,5 @@ class Test(unittest.TestCase):
         
 def error_test():
     s=module.Series(3,[1,1/2,1/6])
+    s.get_error(1)
     return True
-    
