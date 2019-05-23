@@ -8,7 +8,3 @@ def test_function():
         raise AssertionError("No class with this name")
     except:
         raise AssertionError("Other error")
-
-
-
-
