@@ -26,6 +26,10 @@ class Series(object):
         else:
             error=x**(n+1)
             return error
+
+    def clean(self):
+        system("rm .module")
+        return 0
         
 """
 if __name__=="__main__":
