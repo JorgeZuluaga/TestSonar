@@ -1,4 +1,4 @@
 import numpy
 
-class Function(object):
+class Function1(object):
     pass
