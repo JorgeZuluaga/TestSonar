@@ -26,11 +26,11 @@ class Test(unittest.TestCase):
     def test_error_ranges(self):
         self.initialize()
         try:
-            self.s.get_error(10)
+            e=self.s.Error(10)
         except:
             print("n larger than N passed")
         try:
-            self.s.get_error(-1)
+            e=self.s.Error(-1)
         except:
             print("n negative")
 
