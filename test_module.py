@@ -16,3 +16,7 @@ class Test(unittest.TestCase):
         y=s.get_derivative(1.0)
         self.assertAlmostEqual(y,0.83,places=2)
         
+def error_test():
+    s=module.Series(3,[1,1/2,1/6])
+    return True
+    
