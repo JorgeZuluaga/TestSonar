@@ -38,9 +38,7 @@ class Test(unittest.TestCase):
         self.initialize()
         self.s.clean()
             
-"""
     def test_error(self):
         self.initialize()
         e=self.s.get_error(1,1)
         self.assertEqual(e,1)
-"""     

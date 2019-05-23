@@ -29,11 +29,9 @@ class Series(object):
 
     def clean(self):
         from os import system
-        system("rm .module")
+        system("ls &> /dev/null")
         return 0
         
-"""
 if __name__=="__main__":
     s=Series(3,[1,1/2,1/6])
     print(s.get_derivative(1))
-""" 
