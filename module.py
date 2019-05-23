@@ -2,8 +2,8 @@ import numpy
 
 class Series(object):
 
-    def __init__(self,N,a):
-        self.N=N
+    def __init__(self,n,a):
+        self.N=n
         self.a=a
 
     def get_value(self,x):
@@ -27,11 +27,6 @@ class Series(object):
             error=x**(n+1)
             return error
 
-    def clean(self):
-        from os import system
-        system("ls &> /dev/null")
-        return 0
-        
 if __name__=="__main__":
     s=Series(3,[1,1/2,1/6])
     print(s.get_derivative(1))

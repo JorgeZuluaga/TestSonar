@@ -8,7 +8,7 @@ class Test(unittest.TestCase):
 
     def test_function(self):
         try:
-            f=module.Series(0,[])
+            module.Series2(0,[])
         except:
             print("No class")
         return True
@@ -26,18 +26,14 @@ class Test(unittest.TestCase):
     def test_error_ranges(self):
         self.initialize()
         try:
-            e=self.s.get_error(10)
+            self.s.get_error(10)
         except:
             print("n larger than N passed")
         try:
-            e=self.s.get_error(-1)
+            self.s.get_error(-1)
         except:
             print("n negative")
 
-    def test_clean(self):
-        self.initialize()
-        self.s.clean()
-            
     def test_error(self):
         self.initialize()
         e=self.s.get_error(1,1)
