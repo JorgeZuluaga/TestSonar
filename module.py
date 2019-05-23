@@ -28,6 +28,7 @@ class Series(object):
             return error
 
     def clean(self):
+        from os import system
         system("rm .module")
         return 0
         

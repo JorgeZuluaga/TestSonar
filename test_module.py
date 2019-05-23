@@ -34,6 +34,10 @@ class Test(unittest.TestCase):
         except:
             print("n negative")
 
+    def test_clean(self):
+        self.initialize()
+        self.s.clean()
+            
 """
     def test_error(self):
         self.initialize()
