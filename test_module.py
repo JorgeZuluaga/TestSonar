@@ -1,4 +1,4 @@
 import module
 
-def test_Funcion():
+def test_function():
     pass
